@@ -15,7 +15,7 @@
     associations)))
 
 ;; hash-update : [Hash-table-of X Y] X (Y -> Y) Y
-;; updates entry using function if present, else default
+;; updates entry using function if it's present, else default
 (define (hash-update h k upd def)
   (hash-set h k (if (hash-has-key? h k) (upd (hash-ref h k)) def)))
 
