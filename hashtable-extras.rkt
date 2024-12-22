@@ -23,7 +23,7 @@
 ;; NOTE: these below are defined in the Racket library
 
 ;; hash-has-key? : [Hash-table-of X Y] X -> Boolean
-;; Checks if a hash table has a key. Returns #true if it does, #false otherwise
+;; Checks if a hash table has a key. Returns #true if it does and #false otherwise
 
 ;; hash-ref : [Hash-table-of X Y] X -> Y
 ;; Returns the value associated with the key in the hash table
