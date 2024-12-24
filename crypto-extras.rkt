@@ -14,7 +14,7 @@
 (define POWERS (reverse (build-list 32 (lambda (index) (expt 2 (* 8 index))))))
 
 ;; make-secret : -> PrivateKey
-;; Generates a new private key. DO NOT SHARE THIS KEY WITH ANYONE!
+;; Generates a new private key. DO NOT SHARE THIS KEY WITH ANYONE!!
 (define (make-secret)
   (local [(define rsa-impl (get-pk 'rsa libcrypto-factory))]
     (encode-private-key (generate-private-key rsa-impl '((nbits 512))))))
