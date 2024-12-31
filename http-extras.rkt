@@ -7,7 +7,7 @@
 
 ;; get-data : String String -> String
 ;; Gets the data via HTTPS at the given host and path and returns the text of the response
-;; The given host and path should be in the format: "google.com" "/search"
+;; The given host and path should be in this format: "google.com" "/search"
 (define (get-data host path)
   (local [(define-values (code headers port) (http-sendrecv host path #:ssl? #t))]
     (read-until-eof port)))
