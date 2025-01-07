@@ -33,7 +33,7 @@
    (base64-encode (digest/sign (decode-private-key secret) 'sha1 message) "")))
 
 ;; check-signature : PublicKey String Signature -> Boolean
-;; Checks if the given message was signed by the given public key Returns true if the signature
+;; Checks if the given message was signed by the given public key. Returns true if the signature
 ;; is valid, false otherwise. You want to use this function to check if a given message was
 ;; made by the given public key.
 (define (check-signature id message signature)
