@@ -26,7 +26,7 @@
 ;; Checks if a hash table has a key. Returns #true if it does and #false otherwise
 
 ;; hash-ref : [Hash-table-of X Y] X -> Y
-;; Returns the value associated with the key in the hash table
+;; Returns the value that is associated with the key in the hash table
 
 ;; hash-set : [Hash-table-of X Y] X Y -> [Hash-table-of X Y]
 ;; Returns a new hash table with the key mapped to the value
