@@ -32,7 +32,7 @@
     [data (string-append data "\n" (read-until-eof port))]))
 
 ;; get-messages : Nat -> [List-of String]
-;; Returns a list of messages that have been sent to the broadcaster, starting from the given id.
+;; Return list of messages that have been sent to the broadcaster, starting from the given id.
 ;; The maximum number of messages returned per function call is 50, therefore if you want to get
 ;; all the messages you have to call this function multiple times, incrementing the id by 50 each
 ;; time.
