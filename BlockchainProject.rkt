@@ -10,7 +10,7 @@
 ;; where X is the key and Y is the value that the key maps to
 
 ;; make-hash : [List-of [List-of-Two X Y]] -> [Hash-table-of X Y]
-;; Creates a hash table from a list of pairs.
+;; Creates a hash table from a list of pairs
 
 ;; hash-has-key? : [Hash-table-of X Y] X -> Boolean
 ;; Checks if a hash table has a key. Returns #true if it does, #false otherwise.
